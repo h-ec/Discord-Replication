@@ -1,0 +1,106 @@
+.base-holder
+{
+    top: 0;
+    left: 0;
+
+    position: fixed;
+}
+
+*
+{
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.titlebar
+{
+    min-width: 100vw;
+    min-height: 18px ;
+
+    max-width : 100vw;
+    max-height: 18px;
+
+    top : 0;
+    left: 0;
+
+    background-color: var(--background-secondary-alt);
+
+    overflow: hidden;
+
+    align-items: center;
+    justify-content: space-between;
+
+    display: inline-flex;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    position: relative;
+
+    -webkit-app-region: drag;
+}
+
+.titlebar .left svg g
+{
+    fill: var(--interactive-normal);
+}
+
+.titlebar .right svg rect,.titlebar .right svg g,.titlebar .right svg polygon
+{
+    stroke: var(--interactive-normal);
+}
+
+.titlebar .left
+{
+    width:       73px;
+
+    display:        inline-flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items    : center;
+}
+
+.titlebar .right {
+    margin-left: 4px;
+
+    display: inline-block;
+    flex-direction: column;
+}
+
+.titlebar .btn
+{
+    display: inline-flex;
+
+    justify-content: center;
+    align-items    : center;
+
+    min-height: 22px;
+    min-width:  20px;
+
+    padding: 0;
+    margin : 0;
+    gap    : 0;
+
+    top: -4px;
+
+    background: transparent;
+
+    transition: all 12ms ease-out;
+}
+
+.titlebar .btn:hover:not(.close)
+{
+    background: rgba(128, 128, 128, 0.25);
+}
+
+.titlebar .btn:hover 
+{
+    background: rgb(240, 74, 74);
+}
+.titlebar .btn:hover svg polygon, 
+.titlebar .btn:hover svg g,
+.titlebar .btn:hover svg rect {
+    stroke:     rgb(247, 247, 247);
+}

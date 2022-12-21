@@ -1,0 +1,28 @@
+{
+  "name": "xanime",
+  "version": "1.0.0",
+  "main": "./dist/app/main.js",
+  "repository": "https://github.com/Pronum/inifacts.git",
+  "author": "Suffected <99141995+hz-rd@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@cliqz/adblocker-electron": "^1.25.1",
+    "@types/crypto-js": "^4.1.1",
+    "@types/mkpath": "^0.1.29",
+    "@types/node": "^18.11.9",
+    "cross-fetch": "^3.1.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "electron": "^21.3.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "express": "^4.18.2",
+    "mkpath": "^1.0.0",
+    "mongodb": "^4.12.1",
+    "v8-compile-cache": "^2.3.0"
+  },
+  "scripts": {
+    "start": "tsc && concurrently \"ts-node ./copy.ts\" \"tsc -w\" \"electron ./dist/src/app/main.js\" \"tsc -w\"",
+    "pkg:win32": "electron-packager dist/ Discord --icon=packaged/app.ico --win32metadata.CompanyName=\"Unspecified\" --win32metadata.ProductName=\"Discord\" --win32metadata.requested-execution-level=\"asInvoker\" --asar"
+  }
+}
