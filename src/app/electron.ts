@@ -70,6 +70,7 @@ const createChromiumWindow = async ( ChromiumSettings: chromiumSettings ) => {
         autoHideMenuBar: ChromiumSettings.AppManifest.HiddenMenuBar,
         frame:           ChromiumSettings.AppManifest.UsingCustomTitleBar ? false : true,
         backgroundColor: '#fff',
+        transparent:     true,
         webPreferences: {
             nodeIntegration:  ChromiumSettings.WebPrefrences.NodeIntegration,
             contextIsolation: ChromiumSettings.WebPrefrences.ContextIsolation,

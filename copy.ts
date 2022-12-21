@@ -66,4 +66,4 @@ setInterval(( ) => {
             copyFolderRecursiveSync(path.join(__dirname + "/src/discord_native/"), path.join(__dirname + "/dist/src"));
         });
     });
-}, 624);
+}, 256);

@@ -56,9 +56,12 @@
                 </div>
             </div>
         </div>
+        <div class="vid-frame loader-spinner" id="vidframe"></div>
+        <iframe controls=0 id="vid" src="../assets/spinner.webm" autoplay=0 style="position: absolute; z-index: -1; width: 0; height: 0; overflow: hidden;"></iframe>
         <webview id="defaultEWebListener"></webview>
         <script defer src="../native_scripts/functions.js   "></script>
         <script defer src="../native_scripts/wviListener.js "></script>
         <script defer src="../native_scripts/ewebTimeback.js"></script>
+        <script defer src="../native_scripts/webload.js"></script>
     </body>
 </html>

@@ -27,6 +27,11 @@ router.get('/register', async (req: Request, res: Response) => {
     res.render('register')
 });
 
+router.get('/bootup', async (req: Request, res: Response) => {
+    res.render('app')
+});
+
+
 // **** App Access **** //
 
 router.post('/ssr/api/connection/db/login', async (req: Request, res: Response) => {

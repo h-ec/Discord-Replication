@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/native_css/default.css ">
+    <link rel="stylesheet" href="/native_css/titlebar.css">
+    <link rel="stylesheet" href="/native_css/sidebar.css">
+    <link rel="stylesheet" href="/native_css/containers.css">
+</head>
+<body>
+    <div class="app-mount">
+        <div class="base-container"  id="base1"></div>
+        <div class="layer-container" id="layer2"></div>
+        <div class="layer-container" id="layer1">
+            <div class="loader-spinner" id="vidframe"></div>
+            <iframe controls=0 id="vid" src="../assets/spinner.webm" autoplay=0
+                style="position: absolute; z-index: -1; width: 0; height: 0; overflow: hidden;"></iframe>
+        </div>
+    </div>
+    <script defer src="../native_scripts/functions.js"></script>
+    <script defer src="../native_scripts/native_main.js"></script>
+    <script defer src="../native_scripts/webload.js"></script>
+</body>
+</html>

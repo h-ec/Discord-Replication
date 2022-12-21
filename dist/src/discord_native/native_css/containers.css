@@ -1,0 +1,14 @@
+.app-mount
+{
+    min-width : 100vw;
+    min-height: calc(100vh - 22px);
+}
+
+.layer-container
+{
+    width: max-content;
+    height: max-content;
+    min-height: 100vh;
+
+    display: flex;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "xanime",
+  "name": "discord-replication",
   "version": "1.0.0",
   "main": "./dist/app/main.js",
   "repository": "https://github.com/Pronum/inifacts.git",
